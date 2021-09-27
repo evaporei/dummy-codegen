@@ -1,0 +1,34 @@
+[
+  {
+    "name": "CreateAccount",
+    "enum": "CREATE_ACCOUNT"
+  },
+  {
+    "name": "DeployContract",
+    "enum": "DEPLOY_CONTRACT"
+  },
+  {
+    "name": "FunctionCall",
+    "enum": "FUNCTION_CALL"
+  },
+  {
+    "name": "Transfer",
+    "enum": "TRANSFER"
+  },
+  {
+    "name": "Stake",
+    "enum": "STAKE"
+  },
+  {
+    "name": "AddKey",
+    "enum": "ADD_KEY"
+  },
+  {
+    "name": "DeleteKey",
+    "enum": "DELETE_KEY"
+  },
+  {
+    "name": "DeleteAccount",
+    "enum": "DELETE_ACCOUNT"
+  }
+]

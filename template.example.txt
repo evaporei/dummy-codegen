@@ -1,0 +1,5 @@
+
+    to{{name}}(): {{name}}Action {
+      assert(this.kind == ActionKind.{{enum}}, 'ActionValue is not a \'{{name}}\'.')
+      return changetype<{{name}}Action>(this.data as u32)
+    }

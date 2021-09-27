@@ -1,0 +1,40 @@
+
+    toCreateAccount(): CreateAccountAction {
+      assert(this.kind == ActionKind.CREATE_ACCOUNT, 'ActionValue is not a \'CreateAccount\'.')
+      return changetype<CreateAccountAction>(this.data as u32)
+    }
+
+    toDeployContract(): DeployContractAction {
+      assert(this.kind == ActionKind.DEPLOY_CONTRACT, 'ActionValue is not a \'DeployContract\'.')
+      return changetype<DeployContractAction>(this.data as u32)
+    }
+
+    toFunctionCall(): FunctionCallAction {
+      assert(this.kind == ActionKind.FUNCTION_CALL, 'ActionValue is not a \'FunctionCall\'.')
+      return changetype<FunctionCallAction>(this.data as u32)
+    }
+
+    toTransfer(): TransferAction {
+      assert(this.kind == ActionKind.TRANSFER, 'ActionValue is not a \'Transfer\'.')
+      return changetype<TransferAction>(this.data as u32)
+    }
+
+    toStake(): StakeAction {
+      assert(this.kind == ActionKind.STAKE, 'ActionValue is not a \'Stake\'.')
+      return changetype<StakeAction>(this.data as u32)
+    }
+
+    toAddKey(): AddKeyAction {
+      assert(this.kind == ActionKind.ADD_KEY, 'ActionValue is not a \'AddKey\'.')
+      return changetype<AddKeyAction>(this.data as u32)
+    }
+
+    toDeleteKey(): DeleteKeyAction {
+      assert(this.kind == ActionKind.DELETE_KEY, 'ActionValue is not a \'DeleteKey\'.')
+      return changetype<DeleteKeyAction>(this.data as u32)
+    }
+
+    toDeleteAccount(): DeleteAccountAction {
+      assert(this.kind == ActionKind.DELETE_ACCOUNT, 'ActionValue is not a \'DeleteAccount\'.')
+      return changetype<DeleteAccountAction>(this.data as u32)
+    }
